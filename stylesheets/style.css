@@ -85,35 +85,27 @@ body {
   left: 0;
   width: 100px;
   height: 100px;
-  background-image: url("/images/run-1.svg");
+  background-image: url("/images/runner-1.svg");
 }
 
 /* line 28, ../sass/style.scss */
 .two {
   top: 140px;
+  background-image: url("/images/runner-2.svg");
 }
 
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .three {
   top: 240px;
+  background-image: url("/images/runner-3.svg");
 }
 
-/* line 36, ../sass/style.scss */
-.four {
-  top: 340px;
-}
-
-/* line 39, ../sass/style.scss */
-.run-2 {
-  background: url("/images/run-2.svg");
-}
-
-/* line 43, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .blue {
   background: blue;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .race-title {
   text-align: center;
   display: block;

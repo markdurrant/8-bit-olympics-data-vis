@@ -18,7 +18,7 @@ body{
 	left: 0;
 	width: 100px;
 	height: 100px;
-	background-image: url("/images/run-1.svg");
+	background-image: url("/images/runner-1.svg");
 }
 
 .one{
@@ -27,17 +27,12 @@ body{
 
 .two{
 	top: 140px;
+	background-image: url("/images/runner-2.svg");
 }
 
 .three{
 	top: 240px;
-}
-
-.four{
-	top: 340px;
-}
-.run-2{
-	background: url("/images/run-2.svg");
+	background-image: url("/images/runner-3.svg");
 }
 
 .blue{
