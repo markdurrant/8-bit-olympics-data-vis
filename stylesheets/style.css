@@ -75,39 +75,48 @@ body {
   margin: 20px;
   position: relative;
   background: url("/images/bg.gif");
+  font-family: 'Press Start 2P', cursive;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .runner {
   position: absolute;
   top: 40px;
   left: 0;
   width: 100px;
   height: 100px;
-  background-image: url("/images/run-1.svg");
+  background-image: url("/images/runner-1.svg");
 }
 
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .two {
   top: 140px;
+  background-image: url("/images/runner-2.svg");
 }
 
-/* line 31, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .three {
   top: 240px;
-}
-
-/* line 35, ../sass/style.scss */
-.four {
-  top: 340px;
+  background-image: url("/images/runner-3.svg");
 }
 
 /* line 38, ../sass/style.scss */
 .run-2 {
-  background: url("/images/run-2.svg");
+  background-position: right;
 }
 
 /* line 42, ../sass/style.scss */
-.blue {
-  background: blue;
+.race-title {
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px 0 5px;
+  background: red;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
 }

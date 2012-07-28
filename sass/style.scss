@@ -9,6 +9,7 @@ body{
 	margin: 20px;
 	position: relative;
 	background: url("/images/bg.gif");
+	font-family: 'Press Start 2P', cursive;
 }
 
 .runner{
@@ -17,7 +18,7 @@ body{
 	left: 0;
 	width: 100px;
 	height: 100px;
-	background-image: url("/images/run-1.svg");
+	background-image: url("/images/runner-1.svg");
 }
 
 .one{
@@ -26,19 +27,28 @@ body{
 
 .two{
 	top: 140px;
+	background-image: url("/images/runner-2.svg");
 }
 
 .three{
 	top: 240px;
+	background-image: url("/images/runner-3.svg");
 }
 
-.four{
-	top: 340px;
-}
 .run-2{
-	background: url("/images/run-2.svg");
+	background-position: right;
 }
 
-.blue{
-	background: blue;
+.race-title{
+	text-align: center;
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+	color: white;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 10px 0 5px;
+	background: red;
+
+	@include box-shadow(hsla(0,0,0,.5) 10px 10px 0);
 }
