@@ -1,0 +1,44 @@
+@import "compass/css3";
+@import "compass/reset";
+
+*{
+  @include box-sizing(border-box);
+}
+
+body{
+	margin: 20px;
+	position: relative;
+	background: url("/images/bg.gif");
+}
+
+.runner{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background-image: url("/images/run-1.svg");
+}
+
+.one{
+
+}
+
+.two{
+	top: 140px;
+}
+
+.three{
+	top: 240px;
+}
+
+.four{
+	top: 340px;
+}
+.run-2{
+	background: url("/images/run-2.svg");
+}
+
+.blue{
+	background: blue;
+}

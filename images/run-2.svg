@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="100px" height="100px" viewBox="-10 0 100 100" overflow="visible" enable-background="new -10 0 100 100"
+	 xml:space="preserve">
+<defs>
+</defs>
+<path id="runner-color_2_" fill="#FF0000" d="M20,40v10H10H0V40h10H20z M60,30v10v10h10V40V30H60z M60,60v10v10H50V70V60H60z M20,70
+	v10h10V70V60H20V70z M60,90H50V80h10V90z M30,80H20v10h10V80z M60,50V40V30H50H40H30H20v10v10v10h10h10h10h10h10V50H60z"/>
+<path fill="#534741" d="M70,0v10H60H50H40H30H20V0h10h10h10h10H70z"/>
+<path fill="#C7B299" d="M10,40H0V30h10V40z M60,10H50H40H30H20v10v10h10h10h10h10h10V20V10H60z M80,40H70v10h10V40z"/>
+<path opacity="0.4" d="M20,40v10H10H0V40h10H20z M60,30v10v10h10V40V30H60z"/>
+<path opacity="0.7" d="M60,60v10v10H50V70V60H60z M20,70v10h10V70V60H20V70z"/>
+<path opacity="0.9" d="M60,90H50V80h10V90z M30,80H20v10h10V80z"/>
+</svg>
