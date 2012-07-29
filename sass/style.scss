@@ -12,7 +12,8 @@ body{
 	font-family: 'PressStart2PRegular', cursive;
 }
 
-.runner{
+.runner {
+  margin-top: -29px;
 	position: absolute;
 	top: 70px;
 	left: -20px;
@@ -65,7 +66,7 @@ body{
 .race-title{
 	text-align: center;
 	display: block;
-	width: 40%;
+	width: 65%;
 	margin: 0 auto;
 	color: white;
 	font-size: 24px;
@@ -83,6 +84,7 @@ body{
 	margin: 0 auto;
 	position: relative;
 	top: 415px;
+  cursor: pointer;
 }
 
 .start{
@@ -95,34 +97,35 @@ body{
 	left: 80px;
 }
 
-.winners{
+.medal1, .medal2, .medal3 {
+  position: absolute;
+  height: 120px;
+  width: 120px;
 
-	li{
-		height: 120px;
-		width: 120px;
-		z-index: 15;
-		position: absolute;
-		right: 0;
-		top: 90px;
-	}
-
-	.gold{
+	&.gold{
 		background: url("/images/gold.png");
-		display: none;
 	}
 
-	.silver{
+	&.silver{
 		background: url("/images/silver.png");	
-		top: 190px;
-		right: 100px;
-		display: none;
 	}
 
-	.bronze{
+	&.bronze{
 		background: url("/images/bronze.png");	
-		top: 290px;
-		display: none;
 	}
+}
+
+.medal1 {
+  top:95px;
+}
+
+.medal2 {
+  top:195px;
+  left: 120px;
+}
+
+.medal3 {
+  top:295px;
 }
 
 .start-page{
