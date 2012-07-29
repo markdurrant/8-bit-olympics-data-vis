@@ -1,0 +1,4 @@
+/* line 1, ../sass/animation.scss */
+.lane1, .lane2, .lane3 {
+  position: absolute;
+}

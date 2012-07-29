@@ -1,51 +1,26 @@
-var i = 2;
+var event = events[0], years = [], list = [];
 
+for(var i in event.data) {
+  years.push(i);
+}
 
+years.sort();
 
-$(document).keypress(function(event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
+for(var i=0; i<years.length; i++) {
+  var year = years[i];
+  var mens = event.data[year];
 
-    if(keycode == '97'){
-      $('.runner').css("left", i+"%").toggleClass('run-2');
-    
-      i = i+2;
-      console.log(i);
-    }
+  list.push("<li data-type=\"mens\" data-year=\""+year+"\">"+year+"<span class=\"country-code\">("+where[year]+")</span>"+events[0].event+"</li>");
+  if(events[1].data.hasOwnProperty(year)) {
+    var womens = events[1].data[year];
+    list.push("<li data-type=\"womens\" data-year=\""+year+"\">"+year+"<span class=\"country-code\">("+where[year]+")</span>"+events[1].event+"</li>");
+  }
+}
 
-
-
-    // if(keycode == '115') {
-    // }
+$(".race-list").each(function(j, e) {
+  var el = $(e).html(list.join(''));
 });
 
-// $(document).keyup(function(e){
-//     //find out which key was pressed
-//     switch(e.keyCode){
-//         case 65    :    console.log('a');    break;    // a
-//         case 66    :    console.log('b');    break;    // b
-//         case 67    :    console.log('c');    break;    // c
-//         case 68    :    console.log('d');    break;    // d
-//         case 69    :    console.log('e');    break;    // e
-//         case 70    :    console.log('f');    break;    // f
-//         case 71    :    console.log('g');    break;    // g
-//         case 72    :    console.log('h');    break;    // h
-//         case 73    :    console.log('i');    break;    // i
-//         case 74    :    console.log('j');    break;    // j
-//         case 75    :    console.log('k');    break;    // k
-//         case 76    :    console.log('l');    break;    // l
-//         case 77    :    console.log('m');    break;    // m
-//         case 78    :    console.log('n');    break;    // n
-//         case 79    :    console.log('o');    break;    // o
-//         case 80    :    console.log('p');    break;    // p
-//         case 81    :    console.log('q');    break;    // q
-//         case 82    :    console.log('r');    break;    // r
-//         case 83    :    console.log('s');    break;    // s
-//         case 84    :    console.log('t');    break;    // t
-//         case 85    :    console.log('u');    break;    // u
-//         case 86    :    console.log('v');    break;    // v
-//         case 87    :    console.log('w');    break;    // w
-//         case 88    :    console.log('x');    break;    // x
-//         case 89    :    console.log('y');    break;    // y
-//         case 90    :    console.log('z');    break;    // z
-//     }
-// });
+$(".race-list li").bind("click", function(e) {
+  window.location = "/race.html?"+$(this).data("year")+"-"+$(this).data("type");
+})
