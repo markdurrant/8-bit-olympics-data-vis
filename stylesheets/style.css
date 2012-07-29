@@ -163,3 +163,56 @@ body {
   top: 130px;
   left: 80px;
 }
+
+/* line 98, ../sass/style.scss */
+.start-page {
+  position: relative;
+}
+/* line 101, ../sass/style.scss */
+.start-page .start-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("/images/start-bg.gif");
+}
+/* line 111, ../sass/style.scss */
+.start-page .start-medal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  background-image: url("/images/start-medal.png");
+  width: 630px;
+  height: 190px;
+  z-index: 5;
+  margin: 0 auto 40px -315px;
+}
+/* line 122, ../sass/style.scss */
+.start-page .race-list {
+  color: white;
+  font-size: 26px;
+  padding-top: 140px;
+  width: 600px;
+  margin: 0 auto;
+}
+/* line 130, ../sass/style.scss */
+.start-page .race-list li {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  padding: 15px 0 10px;
+}
+/* line 140, ../sass/style.scss */
+.start-page .race-list li:hover {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+/* line 145, ../sass/style.scss */
+.start-page .race-list li span {
+  opacity: 0.5;
+}
