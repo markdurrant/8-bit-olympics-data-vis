@@ -7,7 +7,13 @@
 *  We like separate var statements.
 */
 
-var event = events[1], years = [];
+
+var what = document.location.search.slice(1);
+
+var type = what.match(/womens/) ? 1 : 0;
+var year = parseInt(what, 10);
+
+var event = events[type], years = [];
 
 for(var i in event.data) {
   years.push(i);
@@ -24,8 +30,6 @@ function createRunAnimationStyle(runner, added) {
   }
   return out;
 }
-
-var year = years[10];
 
 $(".race-title").text(event.event+" - Olympia "+year);
 
