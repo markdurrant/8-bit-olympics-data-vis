@@ -14,10 +14,10 @@ body{
 
 .runner{
 	position: absolute;
-	top: 40px;
+	top: 70px;
 	left: -20px;
-	width: 100px;
-	height: 100px;
+	width: 110px;
+	height: 110px;
 	background-image: url("/images/runner-1.svg");
 	z-index: 10;
 }
@@ -27,12 +27,12 @@ body{
 }
 
 .r2{
-	top: 140px;
+	top: 170px;
 	background-image: url("/images/runner-2.svg");
 }
 
 .r3{
-	top: 240px;
+	top: 270px;
 	background-image: url("/images/runner-3.svg");
 }
 
@@ -43,7 +43,7 @@ body{
 .athlete{
 	position: absolute;
 	right: 0;
-	top: 108px;
+	top: 138px;
 	font-size: 20px;
 	color: hsl(0,100,100);
 	background: hsla(0,0,0, .25);
@@ -55,11 +55,11 @@ body{
 }
 
 .a2{
-	top: 208px;
+	top: 238px;
 }
 
 .a3{
-	top: 308px;
+	top: 338px;
 }
 
 .race-title{
@@ -82,7 +82,7 @@ body{
 	height: 130px;
 	margin: 0 auto;
 	position: relative;
-	top: 385px;
+	top: 415px;
 }
 
 .start{
@@ -91,7 +91,7 @@ body{
 	width: 10px;
 	opacity: .2;
 	position: absolute;
-	top: 100px;
+	top: 130px;
 	left: 80px;
 }
 

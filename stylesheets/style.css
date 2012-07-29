@@ -81,23 +81,23 @@ body {
 /* line 15, ../sass/style.scss */
 .runner {
   position: absolute;
-  top: 40px;
+  top: 70px;
   left: -20px;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   background-image: url("/images/runner-1.svg");
   z-index: 10;
 }
 
 /* line 29, ../sass/style.scss */
 .r2 {
-  top: 140px;
+  top: 170px;
   background-image: url("/images/runner-2.svg");
 }
 
 /* line 34, ../sass/style.scss */
 .r3 {
-  top: 240px;
+  top: 270px;
   background-image: url("/images/runner-3.svg");
 }
 
@@ -110,7 +110,7 @@ body {
 .athlete {
   position: absolute;
   right: 0;
-  top: 108px;
+  top: 138px;
   font-size: 20px;
   color: white;
   background: rgba(0, 0, 0, 0.25);
@@ -119,12 +119,12 @@ body {
 
 /* line 57, ../sass/style.scss */
 .a2 {
-  top: 208px;
+  top: 238px;
 }
 
 /* line 61, ../sass/style.scss */
 .a3 {
-  top: 308px;
+  top: 338px;
 }
 
 /* line 65, ../sass/style.scss */
@@ -150,7 +150,7 @@ body {
   height: 130px;
   margin: 0 auto;
   position: relative;
-  top: 385px;
+  top: 415px;
 }
 
 /* line 88, ../sass/style.scss */
@@ -160,6 +160,6 @@ body {
   width: 10px;
   opacity: .2;
   position: absolute;
-  top: 100px;
+  top: 130px;
   left: 80px;
 }
