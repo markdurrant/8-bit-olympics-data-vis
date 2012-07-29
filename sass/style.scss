@@ -76,7 +76,7 @@ body{
 	@include box-shadow(hsla(0,0,0,.5) 10px 10px 0);
 }
 
-.medal{
+.hack-medal{
 	background-image: url("/images/medal.png");
 	width: 530px;
 	height: 130px;
@@ -93,6 +93,36 @@ body{
 	position: absolute;
 	top: 130px;
 	left: 80px;
+}
+
+.winners{
+
+	li{
+		height: 120px;
+		width: 120px;
+		z-index: 15;
+		position: absolute;
+		right: 0;
+		top: 90px;
+	}
+
+	.gold{
+		background: url("/images/gold.png");
+		display: none;
+	}
+
+	.silver{
+		background: url("/images/silver.png");	
+		top: 190px;
+		right: 100px;
+		display: none;
+	}
+
+	.bronze{
+		background: url("/images/bronze.png");	
+		top: 290px;
+		display: none;
+	}
 }
 
 .start-page{

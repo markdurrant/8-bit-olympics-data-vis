@@ -144,7 +144,7 @@ body {
 }
 
 /* line 79, ../sass/style.scss */
-.medal {
+.hack-medal {
   background-image: url("/images/medal.png");
   width: 530px;
   height: 130px;
@@ -164,11 +164,39 @@ body {
   left: 80px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
+.winners li {
+  height: 120px;
+  width: 120px;
+  z-index: 15;
+  position: absolute;
+  right: 0;
+  top: 90px;
+}
+/* line 109, ../sass/style.scss */
+.winners .gold {
+  background: url("/images/gold.png");
+  display: none;
+}
+/* line 114, ../sass/style.scss */
+.winners .silver {
+  background: url("/images/silver.png");
+  top: 190px;
+  right: 100px;
+  display: none;
+}
+/* line 121, ../sass/style.scss */
+.winners .bronze {
+  background: url("/images/bronze.png");
+  top: 290px;
+  display: none;
+}
+
+/* line 128, ../sass/style.scss */
 .start-page {
   position: relative;
 }
-/* line 101, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .start-page .start-bg {
   position: fixed;
   top: 0;
@@ -178,7 +206,7 @@ body {
   z-index: -1;
   background: url("/images/start-bg.gif");
 }
-/* line 111, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .start-page .start-medal {
   position: fixed;
   top: 0;
@@ -189,7 +217,7 @@ body {
   z-index: 5;
   margin: 0 auto 40px -315px;
 }
-/* line 122, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .start-page .race-list {
   color: white;
   font-size: 26px;
@@ -197,7 +225,7 @@ body {
   width: 600px;
   margin: 0 auto;
 }
-/* line 130, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .start-page .race-list li {
   display: block;
   float: left;
@@ -207,12 +235,12 @@ body {
   margin: 10px 0;
   padding: 15px 0 10px;
 }
-/* line 140, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .start-page .race-list li:hover {
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-/* line 145, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .start-page .race-list li span {
   opacity: 0.5;
 }
