@@ -80,6 +80,7 @@ body {
 
 /* line 15, ../sass/style.scss */
 .runner {
+  margin-top: -29px;
   position: absolute;
   top: 70px;
   left: -20px;
@@ -89,24 +90,24 @@ body {
   z-index: 10;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .r2 {
   top: 170px;
   background-image: url("/images/runner-2.svg");
 }
 
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .r3 {
   top: 270px;
   background-image: url("/images/runner-3.svg");
 }
 
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .run-2 {
   background-position: right;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .athlete {
   position: absolute;
   right: 0;
@@ -117,21 +118,21 @@ body {
   padding: 10px 5px 5px;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .a2 {
   top: 238px;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .a3 {
   top: 338px;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .race-title {
   text-align: center;
   display: block;
-  width: 40%;
+  width: 65%;
   margin: 0 auto;
   color: white;
   font-size: 24px;
@@ -143,7 +144,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .hack-medal {
   background-image: url("/images/medal.png");
   width: 530px;
@@ -151,9 +152,10 @@ body {
   margin: 0 auto;
   position: relative;
   top: 415px;
+  cursor: pointer;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .start {
   background-image: url("/images/start.gif");
   height: 250px;
@@ -165,38 +167,45 @@ body {
 }
 
 /* line 100, ../sass/style.scss */
-.winners li {
+.medal1, .medal2, .medal3 {
+  position: absolute;
   height: 120px;
   width: 120px;
-  z-index: 15;
-  position: absolute;
-  right: 0;
-  top: 90px;
+}
+/* line 105, ../sass/style.scss */
+.medal1.gold, .medal2.gold, .medal3.gold {
+  background: url("/images/gold.png");
 }
 /* line 109, ../sass/style.scss */
-.winners .gold {
-  background: url("/images/gold.png");
-  display: none;
-}
-/* line 114, ../sass/style.scss */
-.winners .silver {
+.medal1.silver, .medal2.silver, .medal3.silver {
   background: url("/images/silver.png");
-  top: 190px;
-  right: 100px;
-  display: none;
 }
-/* line 121, ../sass/style.scss */
-.winners .bronze {
+/* line 113, ../sass/style.scss */
+.medal1.bronze, .medal2.bronze, .medal3.bronze {
   background: url("/images/bronze.png");
-  top: 290px;
-  display: none;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
+.medal1 {
+  top: 95px;
+}
+
+/* line 122, ../sass/style.scss */
+.medal2 {
+  top: 195px;
+  left: 120px;
+}
+
+/* line 127, ../sass/style.scss */
+.medal3 {
+  top: 295px;
+}
+
+/* line 131, ../sass/style.scss */
 .start-page {
   position: relative;
 }
-/* line 131, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .start-page .start-bg {
   position: fixed;
   top: 0;
@@ -206,7 +215,7 @@ body {
   z-index: -1;
   background: url("/images/start-bg.gif");
 }
-/* line 141, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .start-page .start-medal {
   position: fixed;
   top: 0;
@@ -217,7 +226,7 @@ body {
   z-index: 5;
   margin: 0 auto 40px -315px;
 }
-/* line 152, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .start-page .race-list {
   color: white;
   font-size: 26px;
@@ -225,7 +234,7 @@ body {
   width: 600px;
   margin: 0 auto;
 }
-/* line 160, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .start-page .race-list li {
   display: block;
   float: left;
@@ -235,12 +244,12 @@ body {
   margin: 10px 0;
   padding: 15px 0 10px;
 }
-/* line 170, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .start-page .race-list li:hover {
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-/* line 175, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .start-page .race-list li span {
   opacity: 0.5;
 }

@@ -22,5 +22,5 @@ $(".race-list").each(function(j, e) {
 });
 
 $(".race-list li").bind("click", function(e) {
-  window.location = "/index.html?"+$(this).data("year")+"-"+$(this).data("type");
+  window.location = "/race.html?"+$(this).data("year")+"-"+$(this).data("type");
 })

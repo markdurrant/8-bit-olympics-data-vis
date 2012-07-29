@@ -31,7 +31,11 @@ function createRunAnimationStyle(runner, added) {
   return out;
 }
 
-$(".race-title").text(event.event+" - Olympia "+year);
+$(".hack-medal").bind("click", function() {
+  document.location = "/index.html";
+});
+
+$(".race-title").text(where[year]+ " "+year+" – "+ event.event);
 
 var runnerOne = event.data[year][0];
 var runnerTwo = event.data[year][1];
@@ -40,6 +44,7 @@ var runnerThree = event.data[year][2];
 var times = [runnerOne.time, runnerTwo.time, runnerThree.time].sort();
 var legtimes = [200, 250, 300];
 var artificializer = [0, 1, 2];
+var winnerClasses = ['gold', 'silver', 'bronze'];
 
 $(".a1").text(runnerOne.athlete);
 $(".a2").text(runnerTwo.athlete);
@@ -61,6 +66,7 @@ var legs3 = setInterval(function() {
   $(".runner.r3").toggleClass("run-2");
 }, legtimes[times.indexOf(runnerThree.time)]);
 
-setTimeout(function(){ clearInterval(legs1) }, runnerOne.animationTime*1000);
-setTimeout(function(){ clearInterval(legs2) }, runnerTwo.animationTime*1000);
-setTimeout(function(){ clearInterval(legs3) }, runnerThree.animationTime*1000);
+setTimeout(function(){ clearInterval(legs1); $(".medal1").addClass(winnerClasses[times.indexOf(runnerOne.time)]) }, runnerOne.animationTime*1000);
+setTimeout(function(){ clearInterval(legs2); $(".medal2").addClass(winnerClasses[times.indexOf(runnerTwo.time)]) }, runnerTwo.animationTime*1000);
+setTimeout(function(){ clearInterval(legs3); $(".medal3").addClass(winnerClasses[times.indexOf(runnerThree.time)])}, runnerThree.animationTime*1000);
+
