@@ -46,7 +46,7 @@ body{
 	top: 108px;
 	font-size: 20px;
 	color: hsl(0,100,100);
-	background: hsla(0,0,0, .3);
+	background: hsla(0,0,0, .25);
 	padding: 10px 5px 5px;
 }
 
@@ -84,3 +84,16 @@ body{
 	position: relative;
 	top: 385px;
 }
+
+.start{
+	background-image: url("/images/start.gif");
+	height: 250px;
+	width: 10px;
+	opacity: .2;
+	position: absolute;
+	top: 100px;
+	left: 80px;
+}
+
+
+

@@ -113,7 +113,7 @@ body {
   top: 108px;
   font-size: 20px;
   color: white;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   padding: 10px 5px 5px;
 }
 
@@ -151,4 +151,15 @@ body {
   margin: 0 auto;
   position: relative;
   top: 385px;
+}
+
+/* line 88, ../sass/style.scss */
+.start {
+  background-image: url("/images/start.gif");
+  height: 250px;
+  width: 10px;
+  opacity: .2;
+  position: absolute;
+  top: 100px;
+  left: 80px;
 }
