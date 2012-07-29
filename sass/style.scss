@@ -95,5 +95,63 @@ body{
 	left: 80px;
 }
 
+.start-page{
+	position: relative;
+
+	.start-bg{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: url("/images/start-bg.gif");	
+	}
+
+	.start-medal{
+		position: fixed;
+		top: 0;
+		left: 50%;
+		background-image: url("/images/start-medal.png");
+		width: 630px;
+		height: 190px;
+		z-index: 5;
+		margin: 0 auto 40px -315px;
+	}
+
+	.race-list{
+		color: white;
+		font-size: 26px;
+		
+		padding-top: 140px;
+		width: 600px;
+		margin: 0 auto;
+
+		li{
+			display: block;
+			float: left;
+			clear: both;
+			width: 100%;
+			text-align: center;
+			
+			margin: 10px 0;
+			padding: 15px 0 10px;
+
+			&:hover{
+				background: hsla(0,0,0,.5);
+				cursor: pointer;
+			}
+
+			span{
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+
+
+
+
 
 
