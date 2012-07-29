@@ -81,31 +81,53 @@ body {
 /* line 15, ../sass/style.scss */
 .runner {
   position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100px;
-  height: 100px;
+  top: 70px;
+  left: -20px;
+  width: 110px;
+  height: 110px;
   background-image: url("/images/runner-1.svg");
+  z-index: 10;
 }
 
-/* line 28, ../sass/style.scss */
-.two {
-  top: 140px;
+/* line 29, ../sass/style.scss */
+.r2 {
+  top: 170px;
   background-image: url("/images/runner-2.svg");
 }
 
-/* line 33, ../sass/style.scss */
-.three {
-  top: 240px;
+/* line 34, ../sass/style.scss */
+.r3 {
+  top: 270px;
   background-image: url("/images/runner-3.svg");
 }
 
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .run-2 {
   background-position: right;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
+.athlete {
+  position: absolute;
+  right: 0;
+  top: 138px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 10px 5px 5px;
+}
+
+/* line 57, ../sass/style.scss */
+.a2 {
+  top: 238px;
+}
+
+/* line 61, ../sass/style.scss */
+.a3 {
+  top: 338px;
+}
+
+/* line 65, ../sass/style.scss */
 .race-title {
   text-align: center;
   display: block;
@@ -119,4 +141,25 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
   box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0;
+}
+
+/* line 79, ../sass/style.scss */
+.medal {
+  background-image: url("/images/medal.png");
+  width: 530px;
+  height: 130px;
+  margin: 0 auto;
+  position: relative;
+  top: 415px;
+}
+
+/* line 88, ../sass/style.scss */
+.start {
+  background-image: url("/images/start.gif");
+  height: 250px;
+  width: 10px;
+  opacity: .2;
+  position: absolute;
+  top: 130px;
+  left: 80px;
 }

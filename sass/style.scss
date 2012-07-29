@@ -14,29 +14,52 @@ body{
 
 .runner {
 	position: absolute;
-	top: 40px;
-	left: 0;
-	width: 100px;
-	height: 100px;
+	top: 70px;
+	left: -20px;
+	width: 110px;
+	height: 110px;
 	background-image: url("/images/runner-1.svg");
+	z-index: 10;
 }
 
-.one{
+.r1{
 
 }
 
-.two{
-	top: 140px;
+.r2{
+	top: 170px;
 	background-image: url("/images/runner-2.svg");
 }
 
-.three{
-	top: 240px;
+.r3{
+	top: 270px;
 	background-image: url("/images/runner-3.svg");
 }
 
 .run-2{
 	background-position: right;
+}
+
+.athlete{
+	position: absolute;
+	right: 0;
+	top: 138px;
+	font-size: 20px;
+	color: hsl(0,100,100);
+	background: hsla(0,0,0, .25);
+	padding: 10px 5px 5px;
+}
+
+.a1{
+
+}
+
+.a2{
+	top: 238px;
+}
+
+.a3{
+	top: 338px;
 }
 
 .race-title{
@@ -52,3 +75,25 @@ body{
 
 	@include box-shadow(hsla(0,0,0,.5) 10px 10px 0);
 }
+
+.medal{
+	background-image: url("/images/medal.png");
+	width: 530px;
+	height: 130px;
+	margin: 0 auto;
+	position: relative;
+	top: 415px;
+}
+
+.start{
+	background-image: url("/images/start.gif");
+	height: 250px;
+	width: 10px;
+	opacity: .2;
+	position: absolute;
+	top: 130px;
+	left: 80px;
+}
+
+
+

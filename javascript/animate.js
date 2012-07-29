@@ -28,15 +28,15 @@ $(".lane2").attr("style", createRunAnimationStyle(runnerTwo));
 $(".lane3").attr("style", createRunAnimationStyle(runnerThree));
 
 var legs1 = setInterval(function() {
-  $(".runner.one").toggleClass("run-2");
+  $(".runner.r1").toggleClass("run-2");
 }, 200);
 
 var legs2 = setInterval(function() {
-  $(".runner.two").toggleClass("run-2");
+  $(".runner.r2").toggleClass("run-2");
 }, 250);
 
 var legs3 = setInterval(function() {
-  $(".runner.three").toggleClass("run-2");
+  $(".runner.r2").toggleClass("run-2");
 }, 300);
 
 
